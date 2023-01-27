@@ -53,3 +53,21 @@
         margin-bottom: 6rem;
     }
 }
+
+@media screen and (max-width: $mobile-width) and (max-width: $tablet-width) {
+    .help {
+        flex-direction: column;
+    }
+
+    .help__title {
+        margin-bottom: 4rem;
+    }
+
+    .help__text {
+        max-width: 100%;
+        
+        &_right {
+        margin-left: 4rem;
+    }
+}
+}

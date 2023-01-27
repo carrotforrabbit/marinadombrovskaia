@@ -27,3 +27,9 @@
         padding-left: 15rem;
     }
 }
+
+@media screen and (max-width: $mobile-width) and (max-width: $tablet-width) {
+    .method {
+        padding: 0;
+    }
+}

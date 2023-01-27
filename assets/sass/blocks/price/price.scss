@@ -60,4 +60,34 @@
     .price__text {
         max-width: 18rem;
     }
+
+    .price__button {
+        left: 50%;
+        padding: 1.4rem 1.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: $mobile-width) and (max-width: $tablet-width) {
+    .price {
+        flex-direction: column;
+        justify-content: stretch;
+    }
+
+    .price__wrapper {
+        width: 100%;
+    }
+
+    .price__button {
+        top: 750px;
+    }
+
+    .price__wrapper_1 {
+        border-bottom: none;
+    }
+    .price__wrapper_2 {
+        padding-bottom: 15rem;
+        border-top: none;
+        border-bottom: 0.5px solid $font-color;
+    }
 }

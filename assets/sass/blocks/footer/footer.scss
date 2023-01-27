@@ -1,6 +1,5 @@
 .footer {
     display: flex;
-
 }
 
 .footer__icon {
@@ -33,4 +32,14 @@
 .footer__icon-wrapper {
     list-style-type: none;
     display: flex;
+}
+
+@media screen and (max-width: $mobile-width) and (max-width: $tablet-width) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer__container {
+        margin-bottom:  4rem;
+    }
 }
