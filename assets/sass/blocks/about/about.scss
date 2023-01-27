@@ -1,0 +1,33 @@
+.about__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.about__title {
+    margin-right: 4rem;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+.about__list {
+    list-style-type: none;
+}
+
+.about__text {
+    max-width: 30rem;
+    margin-right: 4.2rem;
+}
+
+.about__wrapper { 
+    text-align: right;
+}
+
+.dash {
+    text-decoration: wavy;
+    color: $add-color;
+}
+
+.about {
+    margin-bottom: 10rem;
+}

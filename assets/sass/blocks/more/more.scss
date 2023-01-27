@@ -1,0 +1,79 @@
+.more__img {
+    max-width: 34rem;
+}
+
+.more__button {
+    margin-top: 5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: $font-color;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        color: $add-color;
+    }
+}
+
+.more {
+    margin-bottom: 5rem;
+}
+
+.more__title {
+    margin-bottom: 5rem;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.more__img-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.education-btn {
+    position: relative;
+}
+
+.education-btn::before {
+    content: url('/assets/img/circle1.svg');
+    position: absolute;
+    top: -25px;
+    left: -15px;
+}
+
+.work-btn {
+    position: relative;
+}
+
+.work-btn::before {
+    content: url('/assets/img/circle2.svg');
+    position: absolute;
+    top: -25px;
+    left: -15px;
+}
+
+.pseudo {
+    position: relative;
+}
+
+.pseudo::before {
+    content: url('/assets/img/Arrow1.svg');
+    position: absolute;
+    top: -180px;
+    transform: rotate(20deg);
+}
+
+.pseudo2 {
+    position: relative;
+}
+
+.pseudo2::before {
+    content: url('/assets/img/Arrow2.svg');
+    position: absolute;
+    top: -180px;
+    right: 90px;
+    transform: rotate(-20deg);
+}

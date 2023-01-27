@@ -4,11 +4,31 @@
 }
 
 body {
-    padding: 8rem;
+    background: url("/assets/img/white-line1.svg") 0% 1% / 100% no-repeat,
+                url("/assets/img/white-line2.svg") 0% 28% / 100% no-repeat,
+                url("/assets/img/white-line1.svg") 0% 73% / 100% no-repeat,
+                url("/assets/img/blur-green.png") 70% -2% no-repeat,
+                url("/assets/img/blur-peach.png") -120% 7% / 80% no-repeat,
+                url("/assets/img/blur-green.png") 120% 70% no-repeat,
+                url("/assets/img/blur-green.png") 50% 97% no-repeat,
+                url("/assets/img/circle.svg") 80% 2% no-repeat,
+                url("/assets/img/circle.svg") 47% 13% no-repeat,
+                url("/assets/img/circle.svg") 10% 68% no-repeat,
+                $bgr-color ;
+}
+
+.container {
+    padding: 4rem 8rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     font-size: 1.125rem;
     text-align: left;
-    background-color: $bgr-color;
     color: $font-color;
+}
+
+@media screen and (max-width: $tablet-width) {
+    .container {
+        padding: 3rem 2rem;
+        font-size: 1rem;
+    }
 }

@@ -1,0 +1,56 @@
+.price {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+
+    &::before {
+        content: url('/assets/img/wave.png');
+        position: absolute;
+        left: -15%;
+        top: -250px;
+    }
+}
+
+.price__title {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+.price__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    padding: 7rem 0;
+
+    &_1 {padding-right: auto;
+        border-bottom: 0.5px solid $font-color;
+    }
+
+    &_2 {
+        border-top: 0.5px solid $font-color;
+    }
+}
+
+.price__text{
+    max-width: 25rem;
+
+    &_margin{
+        margin-bottom: 3rem;
+        align-items: center;
+    }
+}
+
+.price__button {
+    position: absolute;
+    right: 0;
+    top: 385px;
+    padding: 1.875rem 2.5rem;
+    color: inherit;
+    font-family: inherit;
+    border: 0.5px solid $font-color;
+    border-radius: 50px;
+    background-color: transparent;
+    cursor: pointer;
+}

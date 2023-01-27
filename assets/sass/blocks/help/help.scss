@@ -1,0 +1,41 @@
+.help {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+}
+
+.help__wrapper {
+    list-style-type: none;
+}
+
+.help__title {
+    width: 9rem;
+    margin-right: 10rem;
+    text-align: center;
+}
+
+.help__text {
+    position: relative;
+    max-width: 50rem;
+    padding-left: 2.5rem;
+    margin-bottom: 4rem;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 5%;
+        left: 0%;
+        width: 1rem;
+        height: 1rem;
+        background-color: $add-color;
+        border-radius: 50%;
+    }
+
+    &_right {
+        margin-left: 15rem;
+    }
+}
+
+.underline {
+    text-decoration: underline;
+}

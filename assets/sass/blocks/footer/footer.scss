@@ -1,0 +1,36 @@
+.footer {
+    display: flex;
+
+}
+
+.footer__icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 1rem;
+    cursor: pointer;
+
+    &:hover {
+        fill: black;
+    }
+}
+
+.footer__title, .footer__text {
+    margin-bottom: 2rem;
+}
+
+.footer__container {
+    margin-right: 10rem;
+}
+
+.footer__mail-wrapper {
+    align-self: flex-end;
+
+    &__mail {
+        color: inherit;
+    }
+}
+
+.footer__icon-wrapper {
+    list-style-type: none;
+    display: flex;
+}
