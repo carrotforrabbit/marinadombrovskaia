@@ -77,3 +77,25 @@
     right: 90px;
     transform: rotate(-20deg);
 }
+
+@media screen and (max-width: $tablet-width) {
+    .more__title {
+        letter-spacing: normal;
+    }
+
+    .more__img {
+        max-width: 28rem;
+    }
+
+    .education-btn::before {
+        left: 15px;
+    }
+
+    .work-btn::before {
+        left: -50px;
+    }
+
+    .more__button {
+        max-width: 13rem;
+    }
+}

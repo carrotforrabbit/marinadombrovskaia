@@ -39,3 +39,17 @@
 .underline {
     text-decoration: underline;
 }
+
+@media screen and (max-width: $tablet-width) {
+    .help__title {
+        margin-right: 4rem;
+    }
+
+    .help__text_right {
+        margin-left: 7rem;
+    }
+
+    .help {
+        margin-bottom: 6rem;
+    }
+}

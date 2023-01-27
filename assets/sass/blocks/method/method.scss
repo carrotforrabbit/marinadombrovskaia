@@ -21,3 +21,9 @@
     color: $blur-color;
     background-color: $add-color;
 }
+
+@media screen and (max-width:$tablet-width) {
+    .method {
+        padding-left: 15rem;
+    }
+}

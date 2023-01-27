@@ -4,6 +4,11 @@
     margin-bottom: 4rem;
 }
 
+.about__wrapper-text {
+    display: flex;
+    justify-content: space-between;
+}
+
 .about__title {
     margin-right: 4rem;
     writing-mode: vertical-lr;
@@ -30,4 +35,24 @@
 
 .about {
     margin-bottom: 10rem;
+}
+
+@media screen and (max-width: $tablet-width) {
+    .about__wrapper-text {
+    flex-direction: column;
+}
+
+    .about__text {
+        margin-bottom: 3rem;
+    }
+    
+    .about__list {
+        max-width: 30rem;
+        text-align: right;
+    }
+
+    .about__wrapper {
+        max-width: 30rem;
+        text-align: center;
+    }
 }
