@@ -76,18 +76,28 @@
 
     .price__wrapper {
         width: 100%;
+        // padding: 7rem 0 1rem 0;
     }
 
     .price__button {
-        top: 750px;
+        top: 530px;
     }
 
     .price__wrapper_1 {
+        padding: 7rem 0 1rem 0;
         border-bottom: none;
     }
     .price__wrapper_2 {
-        padding-bottom: 15rem;
+        padding: 3rem 0 10rem 0;
         border-top: none;
         border-bottom: 0.5px solid $font-color;
+    }
+
+    .price::before {
+        max-width: 200px;
+    }
+
+    .price__title {
+        padding: 0 2rem;
     }
 }

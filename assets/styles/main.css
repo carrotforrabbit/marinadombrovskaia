@@ -121,6 +121,14 @@ body {
     margin-bottom: 3rem;
   }
 }
+@media screen and (max-width: 480px) and (max-width: 810px) {
+  .intro__title {
+    font-size: 2.5rem;
+  }
+  .intro__container {
+    padding-left: 0;
+  }
+}
 .circle {
   width: 1.5rem;
   height: 1.5rem;
@@ -453,15 +461,22 @@ body {
     width: 100%;
   }
   .price__button {
-    top: 750px;
+    top: 530px;
   }
   .price__wrapper_1 {
+    padding: 7rem 0 1rem 0;
     border-bottom: none;
   }
   .price__wrapper_2 {
-    padding-bottom: 15rem;
+    padding: 3rem 0 10rem 0;
     border-top: none;
     border-bottom: 0.5px solid #ffffff;
+  }
+  .price::before {
+    max-width: 200px;
+  }
+  .price__title {
+    padding: 0 2rem;
   }
 }
 .footer {
