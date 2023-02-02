@@ -1,0 +1,28 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(217,217,217, 0.7);
+}
+
+.modal__content {
+    width: 50%;
+    height: auto;
+    padding: 8rem 5rem;
+    margin: 10% auto;
+    color: inherit;
+    font-size: 0.8rem;
+    overflow: scroll;
+    background-color: $bgr-color;
+    border-radius: 50px;
+}
+
+.modal__cross {
+    width: 2rem;
+    height: 2rem;
+}
