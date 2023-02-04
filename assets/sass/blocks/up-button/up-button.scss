@@ -1,0 +1,29 @@
+.up-button {
+    display: none;
+    position: fixed;
+    bottom: 7rem;
+    right: 5rem;
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-image: url("../img/up-button.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 80%;
+    background-color: $add-color;
+    cursor: pointer;
+    border-radius: 50%;
+
+    &:hover {
+        background-color: $font-color;
+    }
+}
+
+@media screen and (max-width: $desktop-width) {
+    .up-button {
+        right: 2.5rem;
+    }
+}

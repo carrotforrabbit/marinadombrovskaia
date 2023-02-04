@@ -30,7 +30,7 @@ body {
   color: #ffffff;
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 1024px) {
   .container {
     padding: 3rem;
     font-size: 1rem;
@@ -45,7 +45,7 @@ body {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 480px) and (max-width: 810px) {
+@media screen and (max-width: 480px) and (max-width: 1024px) {
   .title {
     font-size: 1.5rem;
   }
@@ -106,7 +106,7 @@ body {
   color: #F9A286;
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 1024px) {
   .intro {
     display: flex;
     flex-direction: column;
@@ -122,7 +122,7 @@ body {
     margin-bottom: 3rem;
   }
 }
-@media screen and (max-width: 480px) and (max-width: 810px) {
+@media screen and (max-width: 480px) and (max-width: 1024px) {
   .intro__title {
     font-size: 2.5rem;
   }
@@ -158,11 +158,12 @@ body {
 }
 
 .about__list {
+  max-width: 45%;
   list-style-type: none;
 }
 
 .about__text {
-  max-width: 30rem;
+  max-width: 45%;
   margin-right: 4.2rem;
 }
 
@@ -179,7 +180,7 @@ body {
   margin-bottom: 10rem;
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 1024px) {
   .about__wrapper-text {
     flex-direction: column;
   }
@@ -276,7 +277,7 @@ body {
   transform: rotate(-20deg);
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 1024px) {
   .more__title {
     letter-spacing: normal;
   }
@@ -333,7 +334,7 @@ body {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 1024px) {
   .help__title {
     margin-right: 4rem;
   }
@@ -344,7 +345,7 @@ body {
     margin-bottom: 6rem;
   }
 }
-@media screen and (max-width: 480px) and (max-width: 810px) {
+@media screen and (max-width: 480px) and (max-width: 1024px) {
   .help {
     flex-direction: column;
   }
@@ -382,12 +383,12 @@ body {
   background-color: #F9A286;
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 1024px) {
   .method {
     padding-left: 15rem;
   }
 }
-@media screen and (max-width: 480px) and (max-width: 810px) {
+@media screen and (max-width: 480px) and (max-width: 1024px) {
   .method {
     padding: 0;
   }
@@ -437,7 +438,7 @@ body {
   position: absolute;
   right: 0;
   top: 385px;
-  padding: 1.875rem 2.5rem;
+  padding: 3% 2%;
   color: inherit;
   font-family: inherit;
   border: 0.5px solid #ffffff;
@@ -449,7 +450,7 @@ body {
   color: #F9A286;
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 1024px) {
   .price__text {
     max-width: 18rem;
   }
@@ -459,7 +460,7 @@ body {
     font-size: 1.2rem;
   }
 }
-@media screen and (max-width: 480px) and (max-width: 810px) {
+@media screen and (max-width: 480px) and (max-width: 1024px) {
   .price {
     flex-direction: column;
     justify-content: stretch;
@@ -519,7 +520,7 @@ body {
   display: flex;
 }
 
-@media screen and (max-width: 480px) and (max-width: 810px) {
+@media screen and (max-width: 480px) and (max-width: 1024px) {
   .footer {
     flex-direction: column;
   }
@@ -542,11 +543,10 @@ body {
 .modal__content {
   width: 50%;
   height: auto;
-  padding: 8rem 5rem;
+  padding: 5rem;
   margin: 10% auto;
   color: inherit;
   font-size: 0.8rem;
-  overflow: scroll;
   background-color: #006F86;
   border-radius: 50px;
 }
@@ -554,6 +554,36 @@ body {
 .modal__cross {
   width: 2rem;
   height: 2rem;
+  cursor: pointer;
+}
+
+.up-button {
+  display: none;
+  position: fixed;
+  bottom: 7rem;
+  right: 5rem;
+  width: 3rem;
+  height: 3rem;
+  padding: 1rem;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-image: url("../img/up-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 80%;
+  background-color: #F9A286;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.up-button:hover {
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 1025px) {
+  .up-button {
+    right: 2.5rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
