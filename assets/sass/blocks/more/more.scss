@@ -60,7 +60,7 @@
 }
 
 .pseudo::before {
-    content: url('/assets/img/Arrow1.svg');
+    content: url('../img/Arrow1.svg');
     position: absolute;
     top: -180px;
     transform: rotate(20deg);
@@ -71,7 +71,7 @@
 }
 
 .pseudo2::before {
-    content: url('/assets/img/Arrow2.svg');
+    content: url('../img/Arrow2.svg');
     position: absolute;
     top: -180px;
     right: 90px;

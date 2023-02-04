@@ -5,7 +5,7 @@
     margin-bottom: 5rem;
 
     &::before {
-        content: url('/assets/img/wave.png');
+        content: url('../img/wave.png');
         position: absolute;
         left: -15%;
         top: -250px;
@@ -54,6 +54,10 @@
     border-radius: 50px;
     background-color: transparent;
     cursor: pointer;
+
+    &:hover {
+        color: $add-color;
+    }
 }
 
 @media screen and (max-width: $tablet-width) {
@@ -72,6 +76,7 @@
     .price {
         flex-direction: column;
         justify-content: stretch;
+        border-top: 1px solid $font-color;
     }
 
     .price__wrapper {
@@ -80,7 +85,9 @@
     }
 
     .price__button {
+        display: block;
         top: 530px;
+        font-size: 1rem;
     }
 
     .price__wrapper_1 {
@@ -99,5 +106,9 @@
 
     .price__title {
         padding: 0 2rem;
+    }
+
+    .price::before {
+        content: '';
     }
 }

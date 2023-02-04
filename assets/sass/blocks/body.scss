@@ -4,16 +4,16 @@
 }
 
 body {
-    background: url("/marinadombrovskaia/assets/img/white-line1.svg") 0% 1% / 100% no-repeat,
-                url("/marinadombrovskaia/assets/img/white-line2.svg") 0% 28% / 100% no-repeat,
-                url("/marinadombrovskaia/assets/img/white-line1.svg") 0% 73% / 100% no-repeat,
-                url("/marinadombrovskaia/assets/img/blur-green.png") 70% -2% no-repeat,
-                url("/marinadombrovskaia/assets/img/blur-peach.png") -120% 7% / 80% no-repeat,
-                url("/marinadombrovskaia/assets/img/blur-green.png") 120% 70% no-repeat,
-                url("/marinadombrovskaia/assets/img/blur-green.png") 50% 97% no-repeat,
-                url("/marinadombrovskaia/assets/img/circle.svg") 80% 2% no-repeat,
-                url("/marinadombrovskaia/assets/img/circle.svg") 47% 13% no-repeat,
-                url("/marinadombrovskaia/assets/img/circle.svg") 10% 68% no-repeat,
+    background: url("../img/white-line1.svg") 0% 1% / 100% no-repeat,
+                url("../img/white-line2.svg") 0% 28% / 100% no-repeat,
+                url("../img/white-line1.svg") 0% 73% / 100% no-repeat,
+                url("../img/blur-green.png") 70% -2% no-repeat,
+                url("../img/blur-peach.png") -120% 7% / 80% no-repeat,
+                url("../img/blur-green.png") 120% 70% no-repeat,
+                url("../img/blur-green.png") 50% 97% no-repeat,
+                url("../img/circle.svg") 80% 2% no-repeat,
+                url("../img/circle.svg") 47% 13% no-repeat,
+                url("../img/circle.svg") 10% 68% no-repeat,
                 $bgr-color ;
 }
 
@@ -34,18 +34,18 @@ body {
 
     body {
         background: 
-                    url("/marinadombrovskaia/assets/img/white-line1.svg") 0% 1% / 100% no-repeat,
-                    url("/marinadombrovskaia/assets/img/white-line2.svg") 0% 34% / 100% no-repeat,
-                    url("/marinadombrovskaia/assets/img/white-line1.svg") 0% 71% / 100% no-repeat,
-                    url("/marinadombrovskaia/assets/img/blur-green.png") 70% -2% no-repeat,
-                    url("/marinadombrovskaia/assets/img/blur-green.png") -130% 10% no-repeat,
-                    url("/marinadombrovskaia/assets/img/blur-peach.png") -120% 18% / 80% no-repeat,
-                    url("/marinadombrovskaia/assets/img/blur-green.png") -120% 73% no-repeat,
-                    url("/marinadombrovskaia/assets/img/blur-green.png") 50% 97% no-repeat,
-                    url("/marinadombrovskaia/assets/img/circle.svg") 80% 2% no-repeat,
-                    url("/marinadombrovskaia/assets/img/circle.svg") 47% 12% no-repeat,
-                    url("/marinadombrovskaia/assets/img/circle.svg") 77% 32% no-repeat,
-                    url("/marinadombrovskaia/assets/img/circle.svg") 12% 68% no-repeat,
+                    url("../img/white-line1.svg") 0% 1% / 100% no-repeat,
+                    url("../img/white-line2.svg") 0% 34% / 100% no-repeat,
+                    url("../img/white-line1.svg") 0% 71% / 100% no-repeat,
+                    url("../img/blur-green.png") 70% -2% no-repeat,
+                    url("../img/blur-green.png") -130% 10% no-repeat,
+                    url("../img/blur-peach.png") -120% 18% / 80% no-repeat,
+                    url("../img/blur-green.png") -120% 73% no-repeat,
+                    url("../img/blur-green.png") 50% 97% no-repeat,
+                    url("../img/circle.svg") 80% 2% no-repeat,
+                    url("../img/circle.svg") 47% 12% no-repeat,
+                    url("../img/circle.svg") 77% 32% no-repeat,
+                    url("../img/circle.svg") 12% 68% no-repeat,
                     $bgr-color;
     }
 }
