@@ -67,6 +67,7 @@ body {
   max-width: 28.125rem;
   margin-right: 6rem;
   border-radius: 37px;
+  opacity: 0.95;
 }
 
 .intro__icon {
@@ -237,7 +238,7 @@ body {
 }
 
 .education-btn::before {
-  content: url("/assets/img/circle1.svg");
+  content: url("../img/circle1.svg");
   position: absolute;
   top: -25px;
   left: -15px;
@@ -248,7 +249,7 @@ body {
 }
 
 .work-btn::before {
-  content: url("/assets/img/circle2.svg");
+  content: url("../img/circle2.svg");
   position: absolute;
   top: -25px;
   left: -15px;
