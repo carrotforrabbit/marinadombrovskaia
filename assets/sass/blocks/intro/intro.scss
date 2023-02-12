@@ -1,95 +1,97 @@
 .intro__container {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 4rem;
-    margin: 2rem 0 6rem 0;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 4rem;
+  margin: 2rem 0 6rem 0;
 }
 
 .intro__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .intro__img {
-    max-width: 28.125rem;
-    margin-right: 6rem;
-    border-radius: 37px;
-    opacity: 0.95;
-    border: 1px solid $font-color;
+  max-width: 28.125rem;
+  margin-right: 6rem;
+  border-radius: 37px;
+  opacity: 0.95;
+  border: 1px solid $font-color;
 }
 
 .intro__icon {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .intro__title {
-    display: flex;
-    flex-direction: column;
-    font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
 
-    &_line {
-        padding-left: 4rem;
-    }
+  &_line {
+    padding-left: 4rem;
+  }
 }
 
 .intro__subtitle {
-    margin-bottom: 1.8rem;
+  margin-bottom: 1.8rem;
 }
 
 .intro__text {
-    margin-bottom: auto;
+  margin-bottom: auto;
 }
 
 .intro__button {
-    font-family: inherit;
-    font-weight: bold;
-    font-size: 1.3rem;
-    color: inherit;
-    background-color: transparent;
-    text-transform: uppercase;
-    text-decoration: underline;
-    text-align: right;
-    border: none;
-    cursor: pointer;
-    transition: color 0.3s linear;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: inherit;
+  background-color: transparent;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-align: right;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s linear;
 
-    &:hover {
-        color: $add-color;
-    }
+  &:hover {
+    color: $add-color;
+  }
 }
 
-
-
 @media screen and (max-width: $tablet-width) {
-    .intro {
-        display: flex;
-        flex-direction: column;
-    }
-    .intro__container {
-        flex-direction: column;
-    }
+  .intro {
+    display: flex;
+    flex-direction: column;
+  }
+  .intro__container {
+    flex-direction: column;
+  }
 
-    .intro__img {
-        margin-bottom: 3rem;
-        margin-right: 0px;
-    }
+  .intro__img {
+    margin-bottom: 3rem;
+    margin-right: 0px;
+  }
 
-    .intro__text {
-        margin-bottom: 3rem;
-    }
+  .intro__text {
+    margin-bottom: 3rem;
+  }
 }
 
 @media screen and (max-width: $mobile-width) and (max-width: $tablet-width) {
-    .intro__title {
-        font-size: 2.5rem;
-    }
+  .intro__title {
+    font-size: 2.5rem;
 
-    .intro__container {
-        padding-left: 0;
+    &_line {
+      padding-left: 1.5rem;
     }
+  }
 
-    .intro__img {
-        margin-right: 0px;
-    }
+  .intro__container {
+    padding-left: 0;
+  }
+
+  .intro__img {
+    margin-right: 0px;
+  }
 }
