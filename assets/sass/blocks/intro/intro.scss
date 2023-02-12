@@ -16,6 +16,7 @@
     margin-right: 6rem;
     border-radius: 37px;
     opacity: 0.95;
+    border: 1px solid $font-color;
 }
 
 .intro__icon {
@@ -51,6 +52,7 @@
     text-align: right;
     border: none;
     cursor: pointer;
+    transition: color 0.3s linear;
 
     &:hover {
         color: $add-color;

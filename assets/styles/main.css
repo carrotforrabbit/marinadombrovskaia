@@ -68,6 +68,7 @@ body {
   margin-right: 6rem;
   border-radius: 37px;
   opacity: 0.95;
+  border: 1px solid #ffffff;
 }
 
 .intro__icon {
@@ -102,6 +103,7 @@ body {
   text-align: right;
   border: none;
   cursor: pointer;
+  transition: color 0.3s linear;
 }
 .intro__button:hover {
   color: #F9A286;
@@ -212,6 +214,7 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  transition: color 0.3s linear;
 }
 .more__button:hover {
   color: #F9A286;
@@ -283,16 +286,37 @@ body {
     letter-spacing: normal;
   }
   .more__img {
-    max-width: 28rem;
+    max-width: 23rem;
+    position: relative;
   }
   .education-btn::before {
     left: 15px;
+    display: none;
   }
   .work-btn::before {
     left: -50px;
+    display: none;
   }
   .more__button {
     max-width: 13rem;
+    font-size: 1rem;
+  }
+  .education-btn::before {
+    width: 3rem;
+  }
+  .pseudo2::before,
+.pseudo::before {
+    display: none;
+  }
+  .work-btn {
+    position: absolute;
+    right: 7%;
+  }
+  .education-btn {
+    position: absolute;
+    left: 15%;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
   }
 }
 .help {
@@ -446,6 +470,7 @@ body {
   border-radius: 50px;
   background-color: transparent;
   cursor: pointer;
+  transition: color 0.3s linear;
 }
 .price__button:hover {
   color: #F9A286;
@@ -547,15 +572,29 @@ body {
   padding: 5rem;
   margin: 10% auto;
   color: inherit;
-  font-size: 0.8rem;
+  font-size: 1rem;
   background-color: #006F86;
   border-radius: 50px;
 }
 
 .modal__cross {
-  width: 2rem;
-  height: 2rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  padding: 0.4rem;
+  fill: #F9A286;
+  border: 1px solid #F9A286;
+  border-radius: 50%;
   cursor: pointer;
+}
+.modal__cross:hover {
+  fill: #ffffff;
+}
+
+.modal__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 .up-button {
@@ -576,9 +615,11 @@ body {
   background-color: #F9A286;
   cursor: pointer;
   border-radius: 50%;
+  transition: color 0.3s linear;
 }
 .up-button:hover {
   background-color: #ffffff;
+  transition: color 0.3s linear;
 }
 
 @media screen and (max-width: 1025px) {

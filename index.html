@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="image/png" href="favicon.ico">
+    <link rel="image" href="favicon.ico">
     <link rel="stylesheet" href="./assets/styles/main.css">
 
     <title>Marina</title>
@@ -17,7 +17,7 @@
         <section class="intro">
             <h1 class="intro__title">Марина <span class="intro__title_line">Домбровская</span></h1>
             <div class="intro__container">
-                <img src="./assets/img/main.jpg" alt="Photo of Marina Dombrovskaia." class="intro__img">
+                <img src="./assets/img/heroImg.jpg" alt="Photo of Marina Dombrovskaia." class="intro__img">
                 <div class="intro__wrapper">
                     <svg class="intro__icon" xmlns="http://www.w3.org/2000/svg" width="174" height="72"
                         viewBox="0 0 174 72" fill="none">
@@ -75,16 +75,19 @@
         <section class="more">
             <h2 class="more__title title">тут можно узнать про</h2>
             <div class="more__img-container">
-                <button class="education-btn more__button">
+                <button class="education-btn more__button js-open-modal">
                     <div class="pseudo"></div>образование
                 </button>
                 <div class="modal">
-                    <div class="modal__content">
-                        <h2 class="modal__title title">мое образование</h2>
-                        <svg class="modal__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <path
-                                d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
-                        </svg>
+                    <div class="modal__content" data-modal="1">
+                        <div class="modal__container">
+                            <h2 class="modal__title title">мое образование</h2>
+                            <svg class="modal__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+                            </svg>
+                        </div>
                         <p class="modal__text">С мая 2021 до января 2022 я вела тренинговые лагеря в психологическом
                             центре
                             «12к» в подростковых группах от 12 до 17
@@ -106,9 +109,69 @@
                 </div>
                 <img src="./assets/img/lighthouse.PNG" alt="Lighthouse sheding light drawn by Marina."
                     class="more__img">
-                <button class="work-btn more__button">
+                <button class="work-btn more__button js-open-modal">
                     <div class="pseudo2"></div>опыт работы
                 </button>
+                <div class="modal modal2" data-modal="2">
+                    <div class="modal__content">
+                        <div class="modal__container">
+                            <h2 class="modal__title title">мой опыт</h2>
+                            <svg class="modal__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+                            </svg>
+                        </div>
+                        <div class="modal__text">
+                            <ul class="modal__list">
+                                <li class="modal__item">2020-2022 — психологическая работа</li>
+                                <li class="modal__item">2021-н.в. — частная практика</li>
+                                <li class="modal__item">2021-н.в. — школьный психолог (тренинги, классное руководство,
+                                    индивидуальная работа с подростками и их родителями) и в
+                                    3-9 классах русскоязычной школы Adriatic Novi (Черногория, г. Херцег-Нови)</li>
+                                <li class="modal__item">2021 — психологиня (тренинги, индивидуальная работа с
+                                    подростками и их родителями) в выездных детских лагерях для
+                                    детских групп 12-17 лет</li>
+                                <li class="modal__item">2020-2021 — тьютор (тренинги, индивидуальная работа с
+                                    подростками и их родителями) в школах и городских лагерях частных
+                                    альтернативных школ КИТ и ИЛИ</li>
+                                <li class="modal__item">2020-2021 — психолог (лекции, сопровождение участников в чатах)
+                                    на инстакурсе Ирины Данкин</li>
+                            </ul>
+
+                            <ul class="modal__list">
+                                <li class="modal__item">2015-2020 — работа с детскими группами и индивидуально:</li>
+                                <li class="modal__item">2019-2021 — учительница и репетиторка английского в начальной
+                                    школе</li>
+                                <li class="modal__item">2019 — преподавательница робототехники в детских группах 6-10
+                                    лет</li>
+                                <li class="modal__item">2018- 2021 — няня для детей 1.5-10 лет</li>
+                                <li class="modal__item">2015-2016 — волонтерка, репетиторка предметов начальной школы
+                                    для детей из кризисных семей
+                                    6-10 лет (Красный Крест)</li>
+                            </ul>
+
+                            <ul class="modal__list">
+                                <li class="modal__item">До 2015 — работа с группами разного рода</li>
+                                <li class="modal__item">— помощница вожатого в скаутском лагере, ведущая тематических
+                                    занятий для детей 6-8 лет</li>
+                                <li class="modal__item">— волонтерка и ведущая мастер-классов для детей 5-8 лет и их
+                                    родителей на английском и
+                                    русском языках в проекте AIESEC</li>
+                                <li class="modal__item">— волонтерка в волонтерских организация «Подорожник» и
+                                    «Перспективы», работа с
+                                    детьми-инвалидами в ДДИ (детские
+                                    дома-интернаты). Помощница в проведении мастер-классов и уход за детьми с тяжелыми
+                                    нарушениями — синдром Дауна, ДЦП
+                                    (детский церебральный паралич).</li>
+                                <li class="modal__item">— помощница в творческой мастерской Андрея Домбровского для
+                                    детей и взрослых, в том числе из
+                                    ДДИ, ПНИ
+                                    (психо-неврологический интернат).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="help">

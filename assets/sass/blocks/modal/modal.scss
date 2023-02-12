@@ -16,13 +16,28 @@
     padding: 5rem;
     margin: 10% auto;
     color: inherit;
-    font-size: 0.8rem;
+    font-size: 1rem;
     background-color: $bgr-color;
     border-radius: 50px;
 }
 
 .modal__cross {
-    width: 2rem;
-    height: 2rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    padding: 0.4rem;
+    fill: $add-color;
+    border: 1px solid $add-color;
+    border-radius: 50%;
     cursor: pointer;
+
+    &:hover {
+        fill: $font-color;
+    }
+}
+
+.modal__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
 }

@@ -16,9 +16,11 @@
     background-color: $add-color;
     cursor: pointer;
     border-radius: 50%;
+    transition: color 0.3s linear;
 
     &:hover {
         background-color: $font-color;
+        transition: color 0.3s linear;
     }
 }
 

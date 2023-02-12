@@ -55,6 +55,7 @@
     border-radius: 50px;
     background-color: transparent;
     cursor: pointer;
+    transition: color 0.3s linear;
 
     &:hover {
         color: $add-color;
