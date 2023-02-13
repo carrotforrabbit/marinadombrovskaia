@@ -319,9 +319,9 @@ body {
   .education-btn {
     position: absolute;
     left: 15%;
+    z-index: 1;
     writing-mode: vertical-lr;
     text-orientation: upright;
-    z-index: 1;
   }
 }
 .help {
