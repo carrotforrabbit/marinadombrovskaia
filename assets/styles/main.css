@@ -320,6 +320,8 @@ body {
     position: absolute;
     left: 15%;
     z-index: 1;
+  }
+  .edu-btn {
     writing-mode: vertical-lr;
     text-orientation: upright;
   }
@@ -576,7 +578,7 @@ body {
 }
 
 .modal__content {
-  width: 50%;
+  width: 65%;
   height: auto;
   padding: 5rem;
   margin: 10% auto;
@@ -606,6 +608,15 @@ body {
   margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 1024px) {
+  .modal__title {
+    font-size: 1.5rem;
+  }
+  .modal__content {
+    padding: 3rem;
+    margin: 5% auto;
+  }
+}
 .up-button {
   display: none;
   position: fixed;
