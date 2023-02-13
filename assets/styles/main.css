@@ -313,7 +313,8 @@ body {
   }
   .work-btn {
     position: absolute;
-    right: 7%;
+    right: 8%;
+    max-width: 6.5rem;
   }
   .education-btn {
     position: absolute;
@@ -533,9 +534,11 @@ body {
   margin-right: 0.7rem;
   cursor: pointer;
   fill: #F9A286;
+  transition: fill 0.3s linear;
 }
 .footer__icon:hover {
   fill: #ffffff;
+  opacity: 0.7;
 }
 
 .footer__title,
