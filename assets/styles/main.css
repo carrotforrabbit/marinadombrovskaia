@@ -313,17 +313,15 @@ body {
   }
   .work-btn {
     position: absolute;
-    right: 8%;
+    right: 7%;
+    bottom: -211%;
     max-width: 6.5rem;
   }
   .education-btn {
     position: absolute;
-    left: 15%;
+    left: 7%;
+    bottom: -214%;
     z-index: 1;
-  }
-  .edu-btn {
-    writing-mode: vertical-lr;
-    text-orientation: upright;
   }
 }
 .help {
