@@ -75,11 +75,11 @@
         <section class="more">
             <h2 class="more__title title">тут можно узнать про</h2>
             <div class="more__img-container">
-                <button class="education-btn more__button js-open-modal">
+                <button class="education-btn more__button open-modal" data-id="education">
                     <div class="pseudo"></div>образование
                 </button>
                 <div class="modal">
-                    <div class="modal__content" data-modal="1">
+                    <div class="modal__content" id="education">
                         <div class="modal__container">
                             <h2 class="modal__title title">мое образование</h2>
                             <svg class="modal__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -109,11 +109,11 @@
                 </div>
                 <img src="./assets/img/lighthouse.PNG" alt="Lighthouse sheding light drawn by Marina."
                     class="more__img">
-                <button class="work-btn more__button js-open-modal">
+                <button class="work-btn more__button open-modal" data-id="work">
                     <div class="pseudo2"></div>опыт работы
                 </button>
-                <div class="modal modal2" data-modal="2">
-                    <div class="modal__content">
+                <div class="modal modal2">
+                    <div class="modal__content" id="work">
                         <div class="modal__container">
                             <h2 class="modal__title title">мой опыт</h2>
                             <svg class="modal__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -411,7 +411,9 @@
             </div>
         </footer>
     </div>
+
     <script src="./assets/scripts/script.js"></script>
+
 </body>
 
 </html>

@@ -36,7 +36,7 @@ body {
     font-size: 1rem;
   }
   body {
-    background: url("../img/white-line1.svg") 0% 1%/100% no-repeat, url("../img/white-line2.svg") 0% 34%/100% no-repeat, url("../img/white-line1.svg") 0% 71%/100% no-repeat, url("../img/blur-green.png") 70% -2% no-repeat, url("../img/blur-green.png") -130% 10% no-repeat, url("../img/blur-peach.png") -120% 18%/80% no-repeat, url("../img/blur-green.png") -120% 73% no-repeat, url("../img/blur-green.png") 50% 97% no-repeat, url("../img/circle.svg") 80% 2% no-repeat, url("../img/circle.svg") 47% 12% no-repeat, url("../img/circle.svg") 77% 32% no-repeat, url("../img/circle.svg") 12% 68% no-repeat, url("../img/blur-peach.png") -120% 37%/80% no-repeat, url("../img/blur-peach.png") 200% 36.5%/80% no-repeat, #006F86;
+    background: url("../img/white-line1.svg") 0% 1%/100% no-repeat, url("../img/white-line2.svg") 0% 34%/100% no-repeat, url("../img/white-line1.svg") 0% 71%/100% no-repeat, url("../img/blur-green.png") 70% -2% no-repeat, url("../img/blur-green.png") -130% 10% no-repeat, url("../img/blur-peach.png") -120% 18%/80% no-repeat, url("../img/blur-green.png") -120% 73% no-repeat, url("../img/blur-green.png") 50% 97% no-repeat, url("../img/circle.svg") 80% 2% no-repeat, url("../img/circle.svg") 47% 12% no-repeat, url("../img/circle.svg") 77% 32% no-repeat, url("../img/circle.svg") 12% 68% no-repeat, url("../img/blur-peach.png") -120% 36.5%/80% no-repeat, url("../img/blur-peach.png") 200% 36.5%/80% no-repeat, #006F86;
   }
 }
 .title {
@@ -314,13 +314,11 @@ body {
   .work-btn {
     position: absolute;
     right: 7%;
-    bottom: -211%;
     max-width: 6.5rem;
   }
   .education-btn {
     position: absolute;
     left: 7%;
-    bottom: -214%;
     z-index: 1;
   }
 }
