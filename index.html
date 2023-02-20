@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="image" href="/favicon.ico">
     <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
     <title>Marina</title>
 </head>
@@ -75,15 +77,15 @@
         <section class="more">
             <h2 class="more__title title">тут можно узнать про</h2>
             <div class="more__img-container">
-                <button class="education-btn more__button open-modal" data-id="education">
+                <button class="education-btn more__button open-modal" id="education">
                     <div class="pseudo"></div>образование
                 </button>
-                <div class="modal">
-                    <div class="modal__content" id="education">
+                <div class="modal modalEducation">
+                    <div class="modal__content">
                         <div class="modal__container">
                             <h2 class="modal__title title">мое образование</h2>
-                            <svg class="modal__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                fill="none">
+                            <svg class="modal__cross closeModalEdu" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="none">
                                 <path
                                     d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
                             </svg>
@@ -99,59 +101,91 @@
                             Зимой-весной 2022 я вела тренинговую психологическую группу для подростков из кризисных или
                             приемных семей в БФ
                             «Апрель».</p>
-                        <div class="modal__container">
-                            <div class="modal__img"></div>
-                            <div class="modal__img"></div>
-                            <div class="modal__img"></div>
-                            <div class="modal__img"></div>
+                        <div class="modal-slider swiper">
+                            <div class="modal-slider__wrapper swiper-wrapper">
+                                <div class="modal-slider__slide swiper-slide">
+                                    <div class="modal-slider__img"><img
+                                            src="./assets/img/сертификаты/12-коллегий-1.png" alt=""></div>
+                                </div>
+                                <div class="modal-slider__slide swiper-slide">
+                                    <div class="modal-slider__img"><img
+                                            src="./assets/img/сертификаты/12-коллегий-2.png" alt=""></div>
+                                </div>
+                                <div class="modal-slider__slide swiper-slide">
+                                    <div class="modal-slider__img"><img
+                                            src="./assets/img/сертификаты/Marina Dombrovskaia-1.png" alt=""></div>
+                                </div>
+                                <div class="modal-slider__slide swiper-slide">
+                                    <div class="modal-slider__img"><img
+                                            src="./assets/img/сертификаты/Антипедагогика-1.png" alt=""></div>
+                                </div>
+                                <div class="modal-slider__slide swiper-slide">
+                                    <div class="modal-slider__img"><img src="./assets/img/сертификаты/аутоагрессия.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="modal-slider__slide swiper-slide">
+                                    <div class="modal-slider__img"><img src="./assets/img/сертификаты/мадрихов.png"
+                                            alt=""></div>
+                                </div>
+                            </div>
+                            <div class="modal-slider__pagination swiper-pagination"></div>
+                            <div class="modal-slider__button_prev swiper-button-prev"></div>
+                            <div class="modal-slider__button_next swiper-button-next"></div>
                         </div>
                     </div>
                 </div>
                 <img src="./assets/img/lighthouse.PNG" alt="Lighthouse sheding light drawn by Marina."
                     class="more__img">
-                <button class="work-btn more__button open-modal" data-id="work">
+                <button class="work-btn more__button open-modal" id="experience">
                     <div class="pseudo2"></div>опыт работы
                 </button>
                 <div class="modal modal2">
-                    <div class="modal__content" id="work">
+                    <div class="modal__content">
                         <div class="modal__container">
                             <h2 class="modal__title title">мой опыт</h2>
-                            <svg class="modal__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                fill="none">
+                            <svg class="modal__cross closeModalWork" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="none">
                                 <path
                                     d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
                             </svg>
                         </div>
                         <div class="modal__text">
-                            <ul class="modal__list">
-                                <li class="modal__item">2020-2022 — психологическая работа</li>
-                                <li class="modal__item">2021-н.в. — частная практика</li>
-                                <li class="modal__item">2021-н.в. — школьный психолог (тренинги, классное руководство,
-                                    индивидуальная работа с подростками и их родителями) и в
-                                    3-9 классах русскоязычной школы Adriatic Novi (Черногория, г. Херцег-Нови)</li>
-                                <li class="modal__item">2021 — психологиня (тренинги, индивидуальная работа с
-                                    подростками и их родителями) в выездных детских лагерях для
-                                    детских групп 12-17 лет</li>
-                                <li class="modal__item">2020-2021 — тьютор (тренинги, индивидуальная работа с
-                                    подростками и их родителями) в школах и городских лагерях частных
-                                    альтернативных школ КИТ и ИЛИ</li>
-                                <li class="modal__item">2020-2021 — психолог (лекции, сопровождение участников в чатах)
-                                    на инстакурсе Ирины Данкин</li>
-                            </ul>
+                            <div class="modal__wrapper">
+                                <ul class="modal__list modal__list_1">
+                                    <li class="modal__item">2020-2022 — психологическая работа</li>
+                                    <li class="modal__item">2021-н.в. — частная практика</li>
+                                    <li class="modal__item">2021-н.в. — школьный психолог (тренинги, классное
+                                        руководство,
+                                        индивидуальная работа с подростками и их родителями) и в
+                                        3-9 классах русскоязычной школы Adriatic Novi (Черногория, г. Херцег-Нови)</li>
+                                    <li class="modal__item">2021 — психологиня (тренинги, индивидуальная работа с
+                                        подростками и их родителями) в выездных детских лагерях для
+                                        детских групп 12-17 лет</li>
+                                    <li class="modal__item">2020-2021 — тьютор (тренинги, индивидуальная работа с
+                                        подростками и их родителями) в школах и городских лагерях частных
+                                        альтернативных школ КИТ и ИЛИ</li>
+                                    <li class="modal__item">2020-2021 — психолог (лекции, сопровождение участников в
+                                        чатах)
+                                        на инстакурсе Ирины Данкин</li>
+                                </ul>
 
-                            <ul class="modal__list">
-                                <li class="modal__item">2015-2020 — работа с детскими группами и индивидуально:</li>
-                                <li class="modal__item">2019-2021 — учительница и репетиторка английского в начальной
-                                    школе</li>
-                                <li class="modal__item">2019 — преподавательница робототехники в детских группах 6-10
-                                    лет</li>
-                                <li class="modal__item">2018- 2021 — няня для детей 1.5-10 лет</li>
-                                <li class="modal__item">2015-2016 — волонтерка, репетиторка предметов начальной школы
-                                    для детей из кризисных семей
-                                    6-10 лет (Красный Крест)</li>
-                            </ul>
-
-                            <ul class="modal__list">
+                                <ul class="modal__list modal__list_2">
+                                    <li class="modal__item">2015-2020 — работа с детскими группами и индивидуально:</li>
+                                    <li class="modal__item">2019-2021 — учительница и репетиторка английского в
+                                        начальной
+                                        школе</li>
+                                    <li class="modal__item">2019 — преподавательница робототехники в детских группах
+                                        6-10
+                                        лет</li>
+                                    <li class="modal__item">2018- 2021 — няня для детей 1.5-10 лет</li>
+                                    <li class="modal__item">2015-2016 — волонтерка, репетиторка предметов начальной
+                                        школы
+                                        для детей из кризисных семей
+                                        6-10 лет (Красный Крест)</li>
+                                </ul>
+                            </div>
+                            <ul class="modal__list modal__list_3">
                                 <li class="modal__item">До 2015 — работа с группами разного рода</li>
                                 <li class="modal__item">— помощница вожатого в скаутском лагере, ведущая тематических
                                     занятий для детей 6-8 лет</li>
@@ -183,12 +217,14 @@
                     управлять
                     своим
                     состоянием, вы прибегаете к разрушительным методам самопомощи, чтобы справиться с эмоциями
-                    — если вы ярко ощущаете эмоции, и это делает жизнь невыносимой, потому что с ними сложно справиться
+                    — если вы ярко ощущаете эмоции, и это делает жизнь невыносимой, потому что с ними сложно
+                    справиться
                 </li>
                 <span class="circle"></span>
                 <li class="help__text help__text_right"><span class="underline">Сложности в межличностных
                         отношениях</span>
-                    — если вам трудно договариваться, доносить до других свои просьбы и потребности, решать конфликты,
+                    — если вам трудно договариваться, доносить до других свои просьбы и потребности, решать
+                    конфликты,
                     держать границы,
                     говорить «нет»</li>
                 <span class="circle"></span>
@@ -215,7 +251,8 @@
                 <span class="circle"></span>
                 <li class="help__text help__text_right"><span class="underline">Другие сложности</span>
                     — если вашего запроса нет в списке, вы можете обратиться и с ним
-                    — если я не работаю с запросом, который вам актуален, я с удовольствием поделюсь контактами коллег,
+                    — если я не работаю с запросом, который вам актуален, я с удовольствием поделюсь контактами
+                    коллег,
                     которые будут готовы
                     взять вас в работу
                 </li>
@@ -225,15 +262,19 @@
             <h2 class="method__title title">мой подход</h2>
             <ul class="method__list">
                 <li class="method__item"><span class="add-color">ДБТ</span><br> <span class="add-color"></span>
-                    ДБТ — терапия навыков. Навыков, которые помогают строить жизнь, которую хочется жить. Изначально,
+                    ДБТ — терапия навыков. Навыков, которые помогают строить жизнь, которую хочется жить.
+                    Изначально,
                     подход
                     был разработан
-                    для людей со сложностями в эмоциональной регуляции и имеющих пограничное расстройство личности, но
+                    для людей со сложностями в эмоциональной регуляции и имеющих пограничное расстройство личности,
+                    но
                     сейчас этот подход
-                    все чаще применяется и показывает эффективность в работе и с другими состояниями, такими как БАР,
+                    все чаще применяется и показывает эффективность в работе и с другими состояниями, такими как
+                    БАР,
                     (к)ПТСР и др.
 
-                    Например, если вы сильно злитесь, вам хочется сделать себе или людям рядом больно, разрушить что-то,
+                    Например, если вы сильно злитесь, вам хочется сделать себе или людям рядом больно, разрушить
+                    что-то,
                     то
                     вы можете
                     написать мне кризисное сообщение. Я смогу напомнить вам про навыки управления стрессом, помочь
@@ -247,7 +288,8 @@
                     имеющую
                     причинно-следственные связи, изменив которые, можно изменить и само поведение.
 
-                    Например, если вы боитесь зубных врачей, то у этого есть причина, контекст и момент, когда вы начали
+                    Например, если вы боитесь зубных врачей, то у этого есть причина, контекст и момент, когда вы
+                    начали
                     бояться и
                     напрягаться автоматически от одной мысли про лечение зубов.
                 </li>
@@ -255,7 +297,8 @@
                     Мои любимые концепты в этом подходе: экстернализация — рассмотрение проблемы как отдельной от
                     человека,
                     а не его частью,
-                    и взгляд на жизнь как историю — ее можно переписать, пересобрать, создать желательную и укрепляющую
+                    и взгляд на жизнь как историю — ее можно переписать, пересобрать, создать желательную и
+                    укрепляющую
                     героя историю, а не
                     подавляющую и «нормальную».
 
@@ -413,6 +456,9 @@
     </div>
 
     <script src="./assets/scripts/script.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
 
 </body>
 

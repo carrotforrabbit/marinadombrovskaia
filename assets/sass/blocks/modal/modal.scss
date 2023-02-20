@@ -14,11 +14,12 @@
   width: 65%;
   height: auto;
   padding: 5rem;
-  margin: 10% auto;
+  margin: 5% auto;
   color: inherit;
   font-size: 1rem;
   background-color: $bgr-color;
   border-radius: 50px;
+  background: url("../img/white-line1.svg") 0% 1% / 100% no-repeat, $bgr-color;
 }
 
 .modal__cross {
@@ -40,6 +41,49 @@
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 2rem;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+.modal-slider {
+  width: 100%;
+  height: auto;
+  background-color: $bgr-color;
+  border-radius: 50px;
+}
+.modal__wrapper {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.modal__list {
+  list-style-type: none;
+
+  &_1 {
+    max-width: 45%;
+    margin-right: 2rem;
+  }
+  &_2 {
+    max-width: 45%;
+  }
+  &_3 {
+    max-width: 100%;
+  }
+}
+
+.modal-slider__img img {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.modal-slider__slide {
+  width: 45%;
+}
+
+.modal__text {
+  margin-bottom: 3rem;
 }
 
 @media screen and (max-width: $tablet-width) {

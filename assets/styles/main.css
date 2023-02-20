@@ -476,7 +476,9 @@ body {
   transition: color 0.3s linear;
 }
 .price__button:hover {
+  border-color: #F9A286;
   color: #F9A286;
+  box-shadow: 0 0 5px #F9A286, 0 0 25px #F9A286, 0 0 50px #F9A286;
 }
 
 @media screen and (max-width: 1024px) {
@@ -577,11 +579,12 @@ body {
   width: 65%;
   height: auto;
   padding: 5rem;
-  margin: 10% auto;
+  margin: 5% auto;
   color: inherit;
   font-size: 1rem;
   background-color: #006F86;
   border-radius: 50px;
+  background: url("../img/white-line1.svg") 0% 1%/100% no-repeat, #006F86;
 }
 
 .modal__cross {
@@ -602,6 +605,50 @@ body {
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 2rem;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+.modal-slider {
+  width: 100%;
+  height: auto;
+  background-color: #006F86;
+  border-radius: 50px;
+}
+
+.modal__wrapper {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.modal__list {
+  list-style-type: none;
+}
+.modal__list_1 {
+  max-width: 45%;
+  margin-right: 2rem;
+}
+.modal__list_2 {
+  max-width: 45%;
+}
+.modal__list_3 {
+  max-width: 100%;
+}
+
+.modal-slider__img img {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.modal-slider__slide {
+  width: 45%;
+}
+
+.modal__text {
+  margin-bottom: 3rem;
 }
 
 @media screen and (max-width: 1024px) {

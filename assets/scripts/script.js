@@ -1,18 +1,7 @@
-// let modal = document.querySelector(".modal");
 let btn = document.querySelectorAll(".open-modal");
 let closeBtn = document.querySelectorAll(".modal__cross");
-
-// btn.addEventListener ("click", (e) => {
-//     modal.style.display = "block";
-// })
-
-// workBtn.addEventListener ("click", (e) => {
-//     modal.style.display = "block";
-// })
-
-// close.addEventListener ("click", (e) => {
-//     modal.style.display = "none";
-// })
+const modalExperience = document.querySelector(".modal2");
+const modalEducation = document.querySelector(".modalEducation");
 
 //up button
 let upBtn = document.querySelector(".up-button");
@@ -38,15 +27,47 @@ function topFunction() {
 }
 
 //modals
-Array.from(closeBtn, (closeButton) => {
-  closeButton.addEventListener(
-    "click",
-    (e) => (e.target.parentNode.parentNode.style.display = "none")
-  );
-});
-Array.from(btn, (openButton) => {
-  openButton.addEventListener("click", (e) => {
-    let modalId = e.target.getAttribute("data-id");
-    document.getElementById(modalId).style.display = "flex";
+const experience = document.getElementById("experience");
+const education = document.getElementById("education");
+const closeEdu = document.querySelector(".closeModalEdu");
+const closeWork = document.querySelector(".closeModalWork");
+
+const showModalExperience = () => {
+  modalExperience.style.display = "block";
+  document.body.classList.add("stop-scrolling");
+};
+
+const showModalEducation = () => {
+  modalEducation.style.display = "block";
+  document.body.classList.add("stop-scrolling");
+
+  new Swiper(".modal-slider", {
+    direction: "horizontal",
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 10,
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
   });
+};
+
+experience.addEventListener("click", showModalExperience);
+education.addEventListener("click", showModalEducation);
+
+closeEdu.addEventListener("click", (e) => {
+  modalEducation.style.display = "none";
+  document.body.classList.remove("stop-scrolling");
+});
+
+closeWork.addEventListener("click", (e) => {
+  modalExperience.style.display = "none";
+  document.body.classList.remove("stop-scrolling");
 });
