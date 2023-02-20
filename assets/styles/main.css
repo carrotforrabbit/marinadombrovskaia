@@ -659,6 +659,12 @@ body {
     padding: 3rem;
     margin: 5% auto;
   }
+  .modal__wrapper {
+    flex-direction: column;
+  }
+  .modal__list_1, .modal__list_2 {
+    max-width: 100%;
+  }
 }
 .up-button {
   display: none;

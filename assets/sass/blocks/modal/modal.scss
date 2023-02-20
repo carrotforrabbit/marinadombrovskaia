@@ -95,4 +95,15 @@
     padding: 3rem;
     margin: 5% auto;
   }
+
+  .modal__wrapper {
+    flex-direction: column;
+  }
+
+  .modal__list {
+    &_1,
+    &_2 {
+      max-width: 100%;
+    }
+  }
 }
