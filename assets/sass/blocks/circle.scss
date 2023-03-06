@@ -1,6 +1,20 @@
 .circle {
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: $add-color;
-    border-radius: 25%;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: $add-color;
+  border-radius: 25%;
+  -webkit-animation: scale-up-center 1s ease-in-out 1s infinite
+    alternate-reverse both;
+  animation: scale-up-center 1s ease-in-out 1s infinite alternate-reverse both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }

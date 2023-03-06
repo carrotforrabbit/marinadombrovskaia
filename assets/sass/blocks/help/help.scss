@@ -1,73 +1,87 @@
 .help {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rem;
 }
 
 .help__wrapper {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .help__title {
-    width: 9rem;
-    margin-right: 10rem;
-    text-align: center;
+  width: 9rem;
+  margin-right: 10rem;
+  text-align: center;
 }
 
 .help__text {
-    position: relative;
-    max-width: 50rem;
-    padding-left: 2.5rem;
-    margin-bottom: 4rem;
+  position: relative;
+  max-width: 50rem;
+  padding-left: 2.5rem;
+  margin-bottom: 4rem;
 
-    &::before {
-        content: '';
-        position: absolute;
-        top: 5%;
-        left: 0%;
-        width: 1rem;
-        height: 1rem;
-        background-color: $add-color;
-        border-radius: 50%;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    width: 1rem;
+    height: 1rem;
+    background-color: $add-color;
+    border-radius: 50%;
+    -webkit-animation: scale-up-center 1s ease-in-out 1s infinite
+      alternate-reverse both;
+    animation: scale-up-center 1s ease-in-out 1s infinite alternate-reverse both;
+  }
 
-    &_right {
-        margin-left: 15rem;
-    }
+  &_right {
+    margin-left: 15rem;
+  }
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 
 .underline {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: $tablet-width) {
-    .help__title {
-        margin-right: 4rem;
-    }
+  .help__title {
+    margin-right: 4rem;
+  }
 
-    .help__text_right {
-        margin-left: 7rem;
-    }
+  .help__text_right {
+    margin-left: 7rem;
+  }
 
-    .help {
-        margin-bottom: 6rem;
-    }
+  .help {
+    margin-bottom: 6rem;
+  }
 }
 
 @media screen and (max-width: $mobile-width) and (max-width: $tablet-width) {
-    .help {
-        flex-direction: column;
-    }
+  .help {
+    flex-direction: column;
+  }
 
-    .help__title {
-        margin-bottom: 4rem;
-    }
+  .help__title {
+    margin-bottom: 4rem;
+  }
 
-    .help__text {
-        max-width: 100%;
-        
-        &_right {
-        margin-left: 4rem;
+  .help__text {
+    max-width: 100%;
+
+    &_right {
+      margin-left: 4rem;
     }
-}
+  }
 }

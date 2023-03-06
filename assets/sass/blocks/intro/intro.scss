@@ -12,7 +12,7 @@
 }
 
 .intro__img {
-  max-width: 28.125rem;
+  max-width: 30rem;
   margin-right: 6rem;
   border-radius: 37px;
   opacity: 0.95;
@@ -38,25 +38,16 @@
 }
 
 .intro__text {
-  margin-bottom: auto;
+  margin-bottom: 3rem;
 }
 
 .intro__button {
-  font-family: inherit;
-  font-weight: bold;
+  padding: 1rem;
   font-size: 1.3rem;
-  color: inherit;
-  background-color: transparent;
-  text-transform: uppercase;
-  text-decoration: underline;
-  text-align: right;
-  border: none;
-  cursor: pointer;
-  transition: color 0.3s linear;
+}
 
-  &:hover {
-    color: $add-color;
-  }
+.intro__btn-container {
+  text-align: right;
 }
 
 @media screen and (max-width: $tablet-width) {

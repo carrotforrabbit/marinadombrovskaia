@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="image" href="/favicon.ico">
+    <link rel="image" href="favicon.ico">
     <link rel="stylesheet" href="./assets/styles/main.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
@@ -19,7 +19,8 @@
         <section class="intro">
             <h1 class="intro__title">Марина <span class="intro__title_line">Домбровская</span></h1>
             <div class="intro__container">
-                <img src="./assets/img/heroImg.jpg" alt="Photo of Marina Dombrovskaia." class="intro__img">
+                <div class="intro__img-container"><img src="./assets/img/heroImg.jpg"
+                        alt="Photo of Marina Dombrovskaia." class="intro__img"></div>
                 <div class="intro__wrapper">
                     <svg class="intro__icon" xmlns="http://www.w3.org/2000/svg" width="174" height="72"
                         viewBox="0 0 174 72" fill="none">
@@ -34,7 +35,8 @@
                         встреч, и я поняла, что
                         вот оно — то, в чем мне интересно и комфортно.
                     </p>
-                    <a href="https://t.me/marinathink" class="intro__button" target="blank">Записаться</a>
+                    <div class="intro__btn-container"><a href="https://t.me/marinathink" class="intro__button actionBtn"
+                            target="blank">Записаться</a></div>
                 </div>
             </div>
         </section>
@@ -42,9 +44,8 @@
             <div class="about__container">
                 <h2 class="about__title title">про меня</h2>
                 <div class="about__wrapper-text">
-                    <p class="about__text">Год назад я открыла частную психологическую практику, когда поняла, что мной
-                        движет не желание «всех спасти» или «всех
-                        исправить», а желание увидеть мир другого человека, и исследовать его вместе.
+                    <p class="about__text">Кто я как психолог?
+                        <br>
                         <br>
                         Мне близок образ Гэндальфа, который иногда появляется в жизни хоббитов. Он не главный герой, он
                         не знает всех ответов,
@@ -52,27 +53,26 @@
                         персонаж, как выживший
                         и победивший — по-разному. Я не решу за вас ваши сложности, но буду рядом в этом пути.
                     </p>
-                    <ul class="about__list">Кто я еще?
+                    <ul class="about__list">Кто я еще? <br><br>
                         <li class="about__item">Я хозяйка случайно подобранной собаки, ЛГБТ персона, школьный психолог.
-                        </li>
+                        </li><br>
                         <li class="about__item">Я играю в теннис, пою под гитару, люблю пиццу с грибами и теплую ванну
-                            вечером. </li>
+                            вечером.</li><br>
                         <li class="about__item">Я человек, который дважды переезжал с начала войны, поэтому представляю,
                             каково это — переживать стресс от переезда и
-                            адаптации на новом месте, перестраивать планы и картину будущего.</li>
+                            адаптации на новом месте, перестраивать планы и картину будущего.</li><br>
                         <li class="about__item">Я человек с возбудимой нервной системой, поэтому знаю, как порой
                             непросто ярко чувствовать все эмоции, — и приятные, и
                             неприятные.</li>
+                        <br>
+                        <div class="about__wrapper">
+                            <p class="about__text-cite">Я — человек, и работаю <br> я тоже — с людьми.</p>
+                        </div>
                     </ul>
+
                 </div>
             </div>
-            <div class="about__wrapper">
-                <p class="about__text-cite">Я — человек, и работаю я тоже — с людьми.</p>
-                <p class="about__text-cite">Мне важно понять вас и вместе найти адаптивные способы справляться с вашей
-                    жизнью.</p>
-                <p class="about__text-cite">Моя конечная задача — отпустить вас,
-                    чтобы дальше вы справлялись сами.</p>
-            </div>
+
         </section>
         <section class="more">
             <h2 class="more__title title">тут можно узнать про</h2>
@@ -90,17 +90,7 @@
                                     d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
                             </svg>
                         </div>
-                        <p class="modal__text">С мая 2021 до января 2022 я вела тренинговые лагеря в психологическом
-                            центре
-                            «12к» в подростковых группах от 12 до 17
-                            лет, давала обратную связь родителям в формате индивидуальных консультаций, индивидуально
-                            работала с сложным поведением
-                            подростков.
-
-                            Эта работа также сопровождалась супервизией и повышением квалификации по моей инициативе.
-                            Зимой-весной 2022 я вела тренинговую психологическую группу для подростков из кризисных или
-                            приемных семей в БФ
-                            «Апрель».</p>
+                        <p class="modal__text">Здесь вы можете посмотреть мои сертификаты с обучений</p>
                         <div class="modal-slider swiper">
                             <div class="modal-slider__wrapper swiper-wrapper">
                                 <div class="modal-slider__slide swiper-slide">
@@ -153,37 +143,40 @@
                         <div class="modal__text">
                             <div class="modal__wrapper">
                                 <ul class="modal__list modal__list_1">
-                                    <li class="modal__item">2020-2022 — психологическая работа</li>
                                     <li class="modal__item">2021-н.в. — частная практика</li>
                                     <li class="modal__item">2021-н.в. — школьный психолог (тренинги, классное
                                         руководство,
                                         индивидуальная работа с подростками и их родителями) и в
                                         3-9 классах русскоязычной школы Adriatic Novi (Черногория, г. Херцег-Нови)</li>
-                                    <li class="modal__item">2021 — психологиня (тренинги, индивидуальная работа с
-                                        подростками и их родителями) в выездных детских лагерях для
-                                        детских групп 12-17 лет</li>
-                                    <li class="modal__item">2020-2021 — тьютор (тренинги, индивидуальная работа с
-                                        подростками и их родителями) в школах и городских лагерях частных
-                                        альтернативных школ КИТ и ИЛИ</li>
-                                    <li class="modal__item">2020-2021 — психолог (лекции, сопровождение участников в
-                                        чатах)
-                                        на инстакурсе Ирины Данкин</li>
                                 </ul>
-
-                                <ul class="modal__list modal__list_2">
-                                    <li class="modal__item">2015-2020 — работа с детскими группами и индивидуально:</li>
-                                    <li class="modal__item">2019-2021 — учительница и репетиторка английского в
-                                        начальной
-                                        школе</li>
-                                    <li class="modal__item">2019 — преподавательница робототехники в детских группах
-                                        6-10
-                                        лет</li>
-                                    <li class="modal__item">2018- 2021 — няня для детей 1.5-10 лет</li>
-                                    <li class="modal__item">2015-2016 — волонтерка, репетиторка предметов начальной
-                                        школы
-                                        для детей из кризисных семей
-                                        6-10 лет (Красный Крест)</li>
-                                </ul>
+                                <div class="modal__list-container">
+                                    <ul class="modal__list modal__list_2">
+                                        <li class="modal__item">2021 — психологиня (тренинги, индивидуальная работа с
+                                            подростками и их родителями) в выездных детских лагерях для
+                                            детских групп 12-17 лет</li>
+                                        <li class="modal__item">2020-2021 — тьютор (тренинги, индивидуальная работа с
+                                            подростками и их родителями) в школах и городских лагерях частных
+                                            альтернативных школ КИТ и ИЛИ</li>
+                                        <li class="modal__item">2020-2021 — психолог (лекции, сопровождение участников в
+                                            чатах)
+                                            на инстакурсе Ирины Данкин</li>
+                                    </ul>
+                                    <ul class="modal__list modal__list_3">
+                                        <li class="modal__item">2015-2020 — работа с детскими группами и индивидуально:
+                                        </li>
+                                        <li class="modal__item">2019-2021 — учительница и репетиторка английского в
+                                            начальной
+                                            школе</li>
+                                        <li class="modal__item">2019 — преподавательница робототехники в детских группах
+                                            6-10
+                                            лет</li>
+                                        <li class="modal__item">2018- 2021 — няня для детей 1.5-10 лет</li>
+                                        <li class="modal__item">2015-2016 — волонтерка, репетиторка предметов начальной
+                                            школы
+                                            для детей из кризисных семей
+                                            6-10 лет (Красный Крест)</li>
+                                    </ul>
+                                </div>
                             </div>
                             <ul class="modal__list modal__list_3">
                                 <li class="modal__item">До 2015 — работа с группами разного рода</li>
@@ -211,7 +204,6 @@
         <section class="help">
             <h2 class="help__title title">с чем я могу помочь</h2>
             <ul class="help__wrapper">
-                <span class="circle"></span>
                 <li class="help__text"><span class="underline">Сложности с эмоциональной регуляцией</span>
                     — если вам трудно сталкиваться с эмоциями, вы не понимаете, что вы чувствуете, не знаете, как
                     управлять
@@ -220,35 +212,30 @@
                     — если вы ярко ощущаете эмоции, и это делает жизнь невыносимой, потому что с ними сложно
                     справиться
                 </li>
-                <span class="circle"></span>
                 <li class="help__text help__text_right"><span class="underline">Сложности в межличностных
                         отношениях</span>
                     — если вам трудно договариваться, доносить до других свои просьбы и потребности, решать
                     конфликты,
                     держать границы,
                     говорить «нет»</li>
-                <span class="circle"></span>
                 <li class="help__text"><span class="underline">Развитие навыков осознанности</span>
                     — если вы хотите лучше понимать себя, эффективнее достигать целей, жить в соответствии со своими
                     ценностями, улучшить
                     качество жизни
                     — если жизнь кажется серой и однообразной, а дни похожи на дни сурка
                 </li>
-                <span class="circle"></span>
                 <li class="help__text help__text_right"><span class="underline">Переживание стресса</span>
                     — если вы переживаете кризисную ситуацию, горе, потерю
                     — если вам трудно переживать стресс или это удается только с помощью алкоголя, курения,
                     самоповреждений
                     или других видов
                     поведения, которое не соответствует вашим ценностям</li>
-                <span class="circle"></span>
                 <li class="help__text"><span class="underline">Тревожные состояния</span>
                     — если тревога нарушает качество вашей жизни, лишает вас возможности жить ту жизнь, которую вы
                     хотите, а
                     способов с ней
                     справляться у вас нет или они не работают
                 </li>
-                <span class="circle"></span>
                 <li class="help__text help__text_right"><span class="underline">Другие сложности</span>
                     — если вашего запроса нет в списке, вы можете обратиться и с ним
                     — если я не работаю с запросом, который вам актуален, я с удовольствием поделюсь контактами
@@ -319,13 +306,13 @@
             <div class="price__wrapper price__wrapper_2">
                 <h2 class="price__title title">цена</h2>
                 <div class="price__cotaneir">
-                    <p class="price__text price__text_margin">Стоимость одной консультации как очной, так и
-                        дистанционной:
+                    <p class="price__text price__text_margin">Стоимость консультации:
                     </p>
                     <p class="price__text title">2500 р. / $35</p>
                 </div>
             </div>
-            <a href="https://t.me/marinathink" class="price__button title" target="blank">записаться на сессию</a>
+            <a href="https://t.me/marinathink" class="price__button title actionBtn" target="blank">записаться на
+                сессию</a>
         </section>
         <footer class="footer">
             <div class="footer__container">
@@ -458,7 +445,7 @@
     <script src="./assets/scripts/script.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
+    <script src="anime.min.js"></script>
 
 </body>
 
