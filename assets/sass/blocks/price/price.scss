@@ -9,6 +9,7 @@
     position: absolute;
     left: -15%;
     top: -250px;
+    z-index: -1;
   }
 }
 
@@ -54,6 +55,10 @@
 @media screen and (max-width: $tablet-width) {
   .price__text {
     max-width: 18rem;
+
+    &_margin {
+      margin-bottom: 1.5rem;
+    }
   }
 
   .price__button {
@@ -77,8 +82,11 @@
 
   .price__button {
     display: block;
+    min-width: 7.5rem;
+    left: 50%;
     top: 530px;
     font-size: 1rem;
+    padding: 1rem;
   }
 
   .price__wrapper_1 {

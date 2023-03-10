@@ -1,0 +1,10 @@
+.faq-container__title {
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: $tablet-width) {
+  .faq-container__title {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+  }
+}

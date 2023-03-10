@@ -1,0 +1,19 @@
+@import "./__text/faq__text.scss";
+@import "./__title/faq__title.scss";
+
+.faq {
+  display: block;
+  margin: 2rem 0;
+  cursor: pointer;
+  overflow: hidden;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: $tablet-width) {
+  .faq {
+    margin: 2rem 0;
+  }
+}

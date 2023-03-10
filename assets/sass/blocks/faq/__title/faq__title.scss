@@ -1,0 +1,45 @@
+.faq__title::-webkit-details-marker {
+  display: none;
+}
+.faq__title::-moz-list-bullet {
+  list-style-type: none;
+}
+.faq__title::marker {
+  display: none;
+}
+.faq__title {
+  display: block;
+  padding: 0.3em 0.3em 0.3em 1.4em;
+  position: relative;
+  font-size: 1.2rem;
+}
+.faq__title:before {
+  top: 0.4em;
+  left: 0.3em;
+  color: transparent;
+  background: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOC41OSAxNi4zNGw0LjU4LTQuNTktNC41OC00LjU5TDEwIDUuNzVsNiA2LTYgNnoiLz48L3N2Zz4=")
+    no-repeat 50% 50% / 1em 1em;
+  width: 1em;
+  height: 1em;
+  content: "";
+  position: absolute;
+  transition: transform 0.5s;
+}
+
+.faq[open] > .faq__title:before {
+  transform: rotateZ(90deg);
+}
+.faq__title ~ * {
+  padding: 0 2em 10px 2em;
+}
+.faq[open] .faq__title ~ * {
+  animation: sweep 0.5s ease-in-out;
+}
+@keyframes sweep {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

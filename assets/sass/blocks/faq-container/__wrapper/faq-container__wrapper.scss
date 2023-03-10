@@ -1,0 +1,10 @@
+.faq-container__wrapper {
+  width: 80%;
+}
+
+@media screen and (max-width: $tablet-width) {
+  .faq-container {
+    width: 100%;
+    padding: 0;
+  }
+}
